@@ -4,8 +4,7 @@ object Fibonacci {
 
   def getFibonacciNumber(n:Int): Int = {
     def go(position:Int):Int = {
-      if (position == 0) 0
-      else if (position == 1) 1
+      if (position == 0 || position == 1) position
       else go(position - 2) + go( position - 1)
     }
     go(n)
