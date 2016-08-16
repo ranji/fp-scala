@@ -26,6 +26,8 @@ object Fibonacci {
 
 Fibonacci.getFibonacciNumber(6)
 Fibonacci.getFibonacciNum(6)
+Fibonacci.getFibonacciNum(0)
+Fibonacci.getFibonacciNum(1)
 
 object Sorter {
   //2.2
@@ -47,6 +49,8 @@ Sorter.isSorted(Array(1,0,3),(x:Int,y:Int) => x < y)
 Sorter.isSorted(Array("A","AB","AC"),(x:String,y:String) => x < y)
 
 Sorter.isSorted(Array("A","Ac","Ab"),(x:String,y:String) => x < y)
+
+Sorter.isSorted(Array(),(x:String,y:String) => x < y)
 
 object Currying{
   //2.3
